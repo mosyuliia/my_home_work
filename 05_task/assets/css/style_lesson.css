@@ -1,0 +1,71 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+
+}
+ol, ul {
+    list-style: none;
+}/*убрать маркеры*/
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24 px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+.feachers {
+    background-color: ;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding: 100px;
+
+}
+.feature_item {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    padding: 0 20px;
+}
+.feature_pic {    
+    width: 80px;
+    height: 80 px;
+    background-color: #ffae00;
+    text-align: center;
+    border-radius: 18px 0 18px 0;
+    line-height: 80px;
+    margin: 0 auto 40px;
+}
+.feature_pic: hover{
+    background-color: #ffae00;
+    
+}
+.feature_pic img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.feature_title {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 34 px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+
+
+

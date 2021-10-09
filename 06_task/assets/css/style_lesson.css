@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    display: block;
+    line-height: 0;
+}
+
+header {
+    padding-top: 35px;
+}
+
+#logo {
+    float: left;
+    margin-top: 7px;
+}
+
+#main_menu {
+    float: right;
+    margin-right: 54px;
+    margin-top: 12px;
+}
+
+#main_menu ul {
+    list-style: none;
+    text-align: right;
+    font-size: 0;
+}
+
+#main_menu ul li {
+    display: inline-block;
+    margin-right: 28px;
+}
+
+#main_menu ul li.last {
+    margin-right: 0;
+}
+
+#main_menu ul li a {
+    color: #2f281e;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#main_menu ul li a:hover {
+    color: #f90;
+    text-decoration: underline;
+}
+
+.header_buttons {
+    float: right;
+}
+
+.btn {
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 25px;
+    border-radius: 4px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #173a56;
+    border: 1px solid #bcd0e5;
+}
+
+.btn-white:hover {
+    background-color: #173a56;
+    color: #fff;
+}
+
+.btn-orange {
+    background: #f90;
+    color: #fff;
+    border: 1px solid #f90;
+}
+
+.btn-orange:hover {
+    background: #173a56;
+    border-color: #173a56;
+}
+
+.header_buttons .btn-white {
+    margin-right: 10px;
+}

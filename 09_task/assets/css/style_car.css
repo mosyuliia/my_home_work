@@ -1,0 +1,163 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: top;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'HansKendrick', sans-serif;
+    background-color: #e2e7ec;
+}
+
+.container {
+    width: 90%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+h1, h2, p {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #fff;
+}
+
+.flex_box {
+    width: 1120px;
+    height: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.flex_top_part, .flex_bottom_part{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.white_block {
+    background-color: #fff;
+    width: 33,3333%;
+    height: 540px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 260px;
+    left: 25px;
+    width: 90%;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.text h2 {
+text-shadow: 1px 0px black;
+}
+
+.text p {
+    line-height: 50px;
+    opacity: 70%;
+}
+
+.img_man {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.red_car {
+    width: 66,6666%;
+    height: 540px;
+    display: flex;
+    position: relative;
+}
+
+.red_car::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000000, transparent);
+}
+
+.red_car .img_head {
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+
+.text_head {
+    width: 70%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: end;
+    left: 40px;
+    bottom: 30px;
+    z-index: 1;
+    font-size: 15px;
+}
+
+.text_head p {
+    color: #fff;
+    line-height: 45px;
+    letter-spacing: 1px;
+    opacity: 50%;
+}
+
+.text_head h1 {
+    text-shadow: 2px 0px #fff;
+    letter-spacing: 2px;
+}
+
+.loading {
+    color: rgb(133, 133, 133);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    right: 150px;
+}
+
+.loading img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;    
+}
+
+.loading p {
+    line-height: 25px;
+}
+
+@font-face {
+    font-family: "HansKendrick";
+    src: url(../fonts/fonts/HansKendrick-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HansKendrick";
+    src: url(../fonts/fonts/HansKendrick-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
