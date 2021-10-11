@@ -110,6 +110,12 @@ h1 {
     margin-bottom: 30px;    
 }
 
+span {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
+
 ul {
     list-style: none;
     color: #fff;
@@ -144,5 +150,8 @@ body {
     background: linear-gradient(90deg, #3a183f, #af0a4f);
 }
 
+li {
+    margin-bottom: 10px;
+}
 
 
