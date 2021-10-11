@@ -189,6 +189,12 @@ blockquote::before {
     letter-spacing: 2px;
 }
 
+.btn:hover {
+    color: #fff;
+    border: 3px solid #eaa258;
+    background-color: #eaa258;
+}
+
 .clear {
     clear: both;
     height: 0;

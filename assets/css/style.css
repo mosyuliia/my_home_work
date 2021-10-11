@@ -133,14 +133,15 @@ ul {
 }
 
 a {
-    color: rgb(227, 109, 243);
+    color: rgb(238, 163, 248);
     text-decoration: none;
     padding-left: 20px;
 }
 
 body {
     background-position: center;
-    background-image: url(../images/forest-wallpapers-2560x1600-00013.jpg);
+    /*background-image: url(../images/forest-wallpapers-2560x1600-00013.jpg);*/
+    background: linear-gradient(90deg, #3a183f, #af0a4f);
 }
 
 
