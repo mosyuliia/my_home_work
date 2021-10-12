@@ -18,3 +18,90 @@ body {
     max-width: 1920px;
     margin: 0 auto;
 }
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 270px;
+	height: 270px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: #5ecbe7;
+    text-align: center;
+    padding-top: 10px;
+}
+
+li:hover {
+    border: 3px solid #fff;
+}
+
+.icon {
+    
+    color: #fff;
+    font-size: 30px; 
+}
+
+a {
+    text-decoration: none;
+}
