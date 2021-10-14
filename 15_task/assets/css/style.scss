@@ -191,12 +191,6 @@ body {
     height: 100%;
 }
 
-.container {
-    width: 90%;
-    max-width: 1600;
-    margin: 0 auto;
-}
-
 body {
     font-family: 'Raleway', sans-serif;
     /*font-size: 1rem;*/
@@ -268,19 +262,31 @@ header {
      }
 }
 
-
-.section_fresh {
+.container_fresh {
     width: 100%;
+    margin: 0 auto;
     background: url('../images/background_fresh.png') center center/cover no-repeat;
-    display: flex;
+}
+
+.section_fresh { 
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;    
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;        
+    align-items: center; */       
     height: 103vh;
 
     .content_fresh {
-        width: 40%;
-        margin-right: 495px;
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 330px;
+        
+        
+        //margin-left: 100px;
+        
         h1 {
             color: $color_black;
             @include fz(62);
@@ -303,18 +309,26 @@ header {
     }
 }
 
+
+.container_about {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color_turquoise;
+}
+
 .section_about {
-    background-color: $color_turquoise;    
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;        
     padding: 20vh 0;
-    height: 72vh;
     display: flex;
     justify-content: center;
     align-items: center;
     .plate_berries {
-        margin-left: 70px;        
+        //margin-left: 70px;        
     }
     .text_about {
-        margin-left: 50px;
+        //margin-left: 50px;
         margin-bottom: 55px;        
         h2 {
             @include h2($color_white);
@@ -329,12 +343,18 @@ header {
     }
 }
 
-
+.container_blog {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color_violet;
+}
 
 .section_blog {
-    height: 865px;
-    text-align: center;
-    background-color: $color_violet;
+    //height: 865px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px; 
+    text-align: center; 
     .articles {
         display: flex;
         justify-content: center;
@@ -435,6 +455,7 @@ header {
 
 .btn_red {
     @include btn($color_red);
+    margin-bottom: 50px;/*откорректировать потом*/
     &:hover {
     background-color: darken($color_red, 20);
     }

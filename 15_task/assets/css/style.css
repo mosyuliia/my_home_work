@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* raleway-200 - latin-ext_latin */
 @font-face {
   font-family: "Raleway";
@@ -80,12 +81,6 @@ body {
   height: 100%;
 }
 
-.container {
-  width: 90%;
-  max-width: 1600;
-  margin: 0 auto;
-}
-
 body {
   font-family: "Raleway", sans-serif;
   /*font-size: 1rem;*/
@@ -152,18 +147,27 @@ header.scrolled {
   width: calc(100% - 20px);
 }
 
+.container_fresh {
+  width: 100%;
+  margin: 0 auto;
+  background: url("../images/background_fresh.png") center center/cover no-repeat;
+}
+
 .section_fresh {
   width: 100%;
-  background: url("../images/background_fresh.png") center center/cover no-repeat;
-  display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
+  /*display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   height: 103vh;
 }
 .section_fresh .content_fresh {
-  width: 40%;
-  margin-right: 495px;
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 330px;
 }
 .section_fresh .content_fresh h1 {
   color: #000;
@@ -195,19 +199,22 @@ header.scrolled {
   background-color: #cc2d00;
 }
 
-.section_about {
+.container_about {
+  width: 100%;
+  margin: 0 auto;
   background-color: #00b1b1;
+}
+
+.section_about {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
   padding: 20vh 0;
-  height: 72vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section_about .plate_berries {
-  margin-left: 70px;
-}
 .section_about .text_about {
-  margin-left: 50px;
   margin-bottom: 55px;
 }
 .section_about .text_about h2 {
@@ -228,10 +235,17 @@ header.scrolled {
   padding-right: 22%;
 }
 
-.section_blog {
-  height: 865px;
-  text-align: center;
+.container_blog {
+  width: 100%;
+  margin: 0 auto;
   background-color: #b07cf7;
+}
+
+.section_blog {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
 }
 .section_blog .articles {
   display: flex;
@@ -342,6 +356,8 @@ header.scrolled {
   font-size: 20px;
   font-weight: 200;
   box-shadow: 0px 1px 4px #1d1d1d;
+  margin-bottom: 50px;
+  /*откорректировать потом*/
 }
 .btn_red:hover {
   background-color: #b50715;
