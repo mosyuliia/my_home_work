@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* raleway-200 - latin-ext_latin */
 @font-face {
   font-family: "Raleway";
@@ -86,22 +85,23 @@ body {
   /*font-size: 1rem;*/
 }
 
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 header {
   position: fixed;
   width: 100%;
-  left: 0;
-  top: 0;
-  height: 100px;
+  height: 150px;
   transition: all 0.2s ease;
 }
-header .header_container {
+header .container {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
-header #logo {
-  padding-right: 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 header #header_menu ul {
   list-style: none;
@@ -126,8 +126,6 @@ header.scrolled {
   padding: 10px;
   text-transform: uppercase;
   font-weight: 800;
-  margin-right: 8px;
-  top: -5px;
 }
 #header_menu a:after {
   content: "";
@@ -147,36 +145,22 @@ header.scrolled {
   width: calc(100% - 20px);
 }
 
-.container_fresh {
-  width: 100%;
-  margin: 0 auto;
+.fresh_section {
   background: url("../images/background_fresh.png") center center/cover no-repeat;
-}
-
-.section_fresh {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1170px;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   height: 103vh;
-}
-.section_fresh .content_fresh {
-  width: 53%;
   display: flex;
-  flex-direction: column;
-  padding-top: 330px;
+  align-items: center;
 }
-.section_fresh .content_fresh h1 {
+.fresh_section .content_fresh {
+  width: 30%;
+}
+.fresh_section .content_fresh h1 {
   color: #000;
   font-size: 3.875rem;
   font-weight: 800;
   line-height: 100px;
 }
-.section_fresh .content_fresh p {
-  padding-right: 40%;
+.fresh_section .content_fresh p {
   line-height: 30px;
 }
 
@@ -192,32 +176,24 @@ header.scrolled {
   font-size: 20px;
   font-weight: 200;
   box-shadow: 0px 1px 4px #1d1d1d;
-  margin-bottom: 73px;
   margin-top: 18px;
 }
 .btn_orange:hover {
   background-color: #cc2d00;
 }
 
-.container_about {
-  width: 100%;
-  margin: 0 auto;
+.about_section {
   background-color: #00b1b1;
 }
-
-.section_about {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1170px;
-  padding: 20vh 0;
+.about_section .flex_about {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.section_about .text_about {
-  margin-bottom: 55px;
+.about_section .flex_about .bloks_about {
+  width: 38%;
 }
-.section_about .text_about h2 {
+.about_section .flex_about .bloks_about h2 {
   color: #fff;
   font-size: 5.625rem;
   text-align: center;
@@ -225,34 +201,28 @@ header.scrolled {
   text-align: left;
   line-height: 120px;
 }
-.section_about .text_about p {
+.about_section .flex_about .bloks_about p {
   color: #fff;
   font-weight: 200;
   font-size: 1rem;
   line-height: 25px;
-  width: 600px;
   line-height: 30px;
-  padding-right: 22%;
 }
 
-.container_blog {
-  width: 100%;
-  margin: 0 auto;
+.blog_section {
   background-color: #b07cf7;
 }
-
-.section_blog {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1170px;
-  text-align: center;
+.blog_section .flex_blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.section_blog .articles {
+.blog_section .flex_blog .articles {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.section_blog .articles .block_blog {
+.blog_section .flex_blog .articles .block_blog {
   margin-left: 15px;
   margin-right: 15px;
   width: 370px;
@@ -262,7 +232,7 @@ header.scrolled {
   box-shadow: 0px 4px 10px #504f4f;
   transition: all 0.2s linear;
 }
-.section_blog .articles .block_blog:hover .date_block_blog {
+.blog_section .flex_blog .articles .block_blog:hover .date_block_blog {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
   left: 35px;
@@ -275,22 +245,22 @@ header.scrolled {
   text-transform: uppercase;
   vertical-align: middle;
 }
-.section_blog .articles .block_blog:hover .number_date_block_blog {
+.blog_section .flex_blog .articles .block_blog:hover .number_date_block_blog {
   font-family: "Raleway", sans-serif;
   font-size: 1.625rem;
   font-weight: 700;
 }
-.section_blog .articles .block_blog:hover {
+.blog_section .flex_blog .articles .block_blog:hover {
   transform: scale(1.1);
 }
-.section_blog .articles .block_blog::after {
+.blog_section .flex_blog .articles .block_blog::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, #000, transparent 50%);
 }
-.section_blog .articles .block_blog .date_block_blog {
+.blog_section .flex_blog .articles .block_blog .date_block_blog {
   position: absolute;
   width: 55px;
   height: 55px;
@@ -301,12 +271,12 @@ header.scrolled {
   left: 0;
   transition: all 0.2s linear;
 }
-.section_blog .articles .block_blog .img_section_blog {
+.blog_section .flex_blog .articles .block_blog .img_section_blog {
   width: 370px;
   height: 310px;
   object-fit: cover;
 }
-.section_blog .articles .block_blog .text_img_section_blog {
+.blog_section .flex_blog .articles .block_blog .text_img_section_blog {
   position: absolute;
   color: #fff;
   bottom: 20px;
@@ -314,12 +284,12 @@ header.scrolled {
   z-index: 1;
   text-align: left;
 }
-.section_blog .articles .block_blog .text_img_section_blog .h4_text_img_section_blog {
+.blog_section .flex_blog .articles .block_blog .text_img_section_blog .h4_text_img_section_blog {
   font-size: 1.25rem;
   line-height: 26px;
   padding-bottom: 15px;
 }
-.section_blog .articles .block_blog .text_img_section_blog .p_text_img_section_blog {
+.blog_section .flex_blog .articles .block_blog .text_img_section_blog .p_text_img_section_blog {
   font-size: 0.8125rem;
 }
 
@@ -337,11 +307,11 @@ header.scrolled {
   font-weight: 200;
   font-size: 1rem;
   line-height: 25px;
-  width: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  width: 49%;
 }
 
 .btn_red {
@@ -356,8 +326,7 @@ header.scrolled {
   font-size: 20px;
   font-weight: 200;
   box-shadow: 0px 1px 4px #1d1d1d;
-  margin-bottom: 50px;
-  /*откорректировать потом*/
+  margin-bottom: 100px;
 }
 .btn_red:hover {
   background-color: #b50715;
