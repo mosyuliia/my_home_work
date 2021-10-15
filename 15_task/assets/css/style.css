@@ -331,3 +331,25 @@ header.scrolled {
 .btn_red:hover {
   background-color: #b50715;
 }
+
+footer {
+  height: 90px;
+  background-color: #262626;
+  box-shadow: 0 0 10px black;
+}
+footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 25px;
+}
+footer .container span {
+  color: #f72b3b;
+  font-weight: 600;
+}

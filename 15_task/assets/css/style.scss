@@ -422,3 +422,24 @@ header {
     background-color: darken($color_red, 20);
     }
 }
+
+
+footer {
+    height: 90px;
+    background-color: #262626;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            @include p($color_white);
+        }
+        span {
+            color: $color_red;
+            font-weight: 600;
+        }
+    }
+}
+
