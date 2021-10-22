@@ -824,7 +824,7 @@ main {
   padding-bottom: 15px;
 }
 .blog_section .flex_blog .articles .block_blog .text_img_section_blog .p_text_img_section_blog {
-  font-size: 0.8125rem;
+  font-size: 1rem;
 }
 
 .h2_blog {
@@ -930,7 +930,7 @@ main {
   font-weight: 200;
   font-size: 1rem;
   line-height: 25px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .form_message {

@@ -825,7 +825,7 @@ main {
                         padding-bottom: 15px;
                     }
                     .p_text_img_section_blog {
-                        @include fz(13);
+                        @include fz(16);
                     }
                 }
             }
@@ -911,7 +911,7 @@ main {
     &::placeholder {
         font-family: 'Raleway', sans-serif;
         @include p($color_white);
-        @include fz(14);
+        @include fz(16);
     }
 }
 
