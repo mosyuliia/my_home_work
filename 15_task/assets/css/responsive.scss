@@ -75,6 +75,28 @@ $base_size:16;
         }
     }
 
+    .section_services {
+        .container {
+            .block_servises {
+                .block_servises_left {
+                    padding-left: 50px;
+                    
+                }
+                .block_servises_right {
+                    justify-content: center;
+                    width: 80%;
+                    .services_name {
+                        
+                        h2 {
+                            @include fz(70);
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .section_gallery {
         .container {
             .gallery_text {
@@ -126,11 +148,7 @@ $base_size:16;
         }
     }
     
-    .section_services {
-        .block_servises {
-        padding: 12% 0 12% 10%;
-        }
-    }
+    
 
     .section_subscribe {
         padding: 120px 0;
@@ -157,13 +175,7 @@ $base_size:16;
             }
         }
     }
-    .section_services {
-        .block_servises {
-            .block_link {
-                height: 460px;                 
-            }
-        }
-    }
+   
     
     .section_subscribe {
         padding: 110px 0;
@@ -171,22 +183,29 @@ $base_size:16;
 }
 
 @media screen and (max-width:1020px){
-   
     .section_services {
-        .block_servises {
-            padding: 10% 0 10% 5%;
-            background-size: 50% auto;
-            .block_link {
-                height: 400px;
-                li {
-                    a {
-                        @include fz(18);
-                        line-height: 20px;         
+        .container {
+            .block_servises {
+                .block_servises_left {
+                    padding-left: 0px;
+                    padding-top: 0;
+                    width: 70%;
+                }
+                .block_servises_right {
+                    justify-content: center;
+                    background-size: 80%;
+                    .services_name {
+                        
+                        h2 {
+                            @include fz(70);
+                            
+                        }
                     }
-                }                 
+                }
             }
         }
     }
+   
     .section_subscribe {
         padding: 100px 0;
         .subscribe_text {
@@ -255,6 +274,45 @@ $base_size:16;
             }
         }
     }
+
+    .section_services {
+        padding: 2vh 0 5vh 0;
+        .container {
+            .block_servises {
+                flex-direction: column-reverse;
+                justify-content: space-between;
+                align-items: center;
+                .block_servises_left {
+                    padding-left: 0px;
+                    padding-top: 0px;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .block_link {
+                        width: 90%;                       
+                    }
+                }
+                .block_servises_right {
+                    background-color: transparent;
+                    background-size: 0 0;            
+                    justify-content: center;
+                    width: 100%;
+                    .services_name {
+                        
+                    
+                        h2 {
+                            @include fz(60);
+                            line-height: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 
     .blog_section {
         
@@ -331,31 +389,7 @@ $base_size:16;
         }
     }
     
-    .section_services {
-        .block_servises {
-            padding: 10% 0 10% 3%;
-            .block_link {
-                height: 360px;
-                width: 42%;
-                li {
-                    a {
-                        @include fz(18);
-                    }
-                    .image_link {
-                        width: 20%;
-                        
-                    }
-                }                
-            }
-            .block_image {
-                width: 50%;
-                h2 {
-                    @include fz(65);
-                    letter-spacing: 0;
-                }
-            }
-        }
-    }
+    
 
     .section_gallery {
         padding: 5vh 0;
@@ -533,32 +567,44 @@ $base_size:16;
             }
         }
     }
+   
     .section_services {
-        .block_servises {
-            padding: 10% 0;
-            .block_link {
-                width: 45%;
-                height: 320px;
-                li {
-                    a {
-                        @include fz(16);
-
-                        .image_link {
-                            
+        padding: 2vh 0 5vh 0;
+        .container {
+            .block_servises {
+                flex-direction: column-reverse;
+                justify-content: space-between;
+                align-items: center;
+                .block_servises_left {
+                    padding-left: 0px;
+                    padding-top: 0px;
+                    width: 60%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .block_link {
+                        width: 90%;                       
+                    }
+                }
+                .block_servises_right {
+                    background-size: 0%;
+                    justify-content: center;
+                    width: 100%;
+                    .services_name {
+                        
+                    
+                        h2 {
+                            @include fz(54);
+                            line-height: 100px;
                         }
                     }
-                }                
-            }
-            .block_image {
-                width: 50%;
-                h2 {
-                    @include fz(70);
                 }
             }
         }
     }
+
     .section_subscribe {
-        padding: 70px 0;
         .subscribe_text {
             width: 63%;
         }
@@ -673,27 +719,45 @@ $base_size:16;
             }
         }
     }
+    
     .section_services {
-        .block_servises {
-            padding: 10% 0 10% 3%;
-            .block_link {
-                height: 360px;
-                width: 42%;
-                li {
-                    a {
+        padding: 2vh 0 5vh 0;
+        .container {
+            .block_servises {
+                flex-direction: column-reverse;
+                justify-content: space-between;
+                align-items: center;
+                .block_servises_left {
+                    padding-left: 0px;
+                    padding-top: 0px;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .block_link {
+                        width: 90%;
+                        li {
+                            
+                            a {
+                                @include fz(18)
+                            }
+                        }                       
                     }
-                    .image_link {
-                        width: 20%;
-                    }
-                }                
-            }
-            .block_image {                
-                width: 50%;
-                margin-right: 10px;
-                h2 {
-                    @include fz(42);
-                    letter-spacing: 0;
+                }
+                .block_servises_right {
+                    background-size: 0%;
+                    justify-content: center;
+                    width: 100%;
+                    padding-top: 0px;
+                    .services_name {
+                        
                     
+                        h2 {
+                            @include fz(44);
+                            line-height: 100px;
+                        }
+                    }
                 }
             }
         }
@@ -852,6 +916,51 @@ $base_size:16;
 }
 
 @media screen and (max-width:500px){
+
+    .section_services {
+        padding: 2vh 0 5vh 0;
+        .container {
+            .block_servises {
+                flex-direction: column-reverse;
+                justify-content: space-between;
+                align-items: center;
+                .block_servises_left {
+                    padding-left: 0px;
+                    padding-top: 0px;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .block_link {
+                        width: 90%;
+                        li {
+                            
+                            a {
+                                @include fz(18)
+                            }
+                        }                       
+                    }
+                }
+                .block_servises_right {
+                    background-size: 0;
+                    justify-content: center;
+                    width: 100%;
+                    padding-top: 0px;
+                    .services_name {
+                        
+                    
+                        h2 {
+                            @include fz(44);
+                            line-height: 100px;
+                            padding-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     .section_subscribe {
         background: url(../images/background_sub_small_3.png) center center no-repeat;
         padding: 5vh 0;
@@ -882,6 +991,9 @@ $base_size:16;
                 }
             }
         }
+    }
+    .section_subscribe.lazy-bg {
+        overflow: hidden;
     }
 
     .blog_section {
