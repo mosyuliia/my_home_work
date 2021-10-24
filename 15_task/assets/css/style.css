@@ -610,10 +610,7 @@ main {
 
 .section_subscribe {
   padding: 10vh 0;
-  background-color: #fff;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../images/background_sub.png) center center no-repeat;
 }
 
 .subscribe_text {

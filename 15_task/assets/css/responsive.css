@@ -44,9 +44,6 @@
   .blog_section .container .flex_blog .articles .block_blog {
     margin-bottom: 30px;
   }
-  .section_subscribe {
-    padding: 120px 0;
-  }
   .section_subscribe .subscribe_text {
     width: 45%;
   }
@@ -54,9 +51,6 @@
 @media screen and (max-width: 1150px) {
   .fresh_section .content_fresh {
     width: 50%;
-  }
-  .section_subscribe {
-    padding: 110px 0;
   }
 }
 @media screen and (max-width: 1020px) {
@@ -73,9 +67,6 @@
     font-size: 4.375rem;
   }
 
-  .section_subscribe {
-    padding: 100px 0;
-  }
   .section_subscribe .subscribe_text {
     width: 55%;
   }
@@ -625,10 +616,6 @@
   .section_subscribe .container .btn_subscribe .btn_green {
     height: 40px;
     font-size: 15px;
-  }
-
-  .section_subscribe.lazy-bg {
-    overflow: hidden;
   }
 
   .blog_section .container .flex_blog .h2_blog {

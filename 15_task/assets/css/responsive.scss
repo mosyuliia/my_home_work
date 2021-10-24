@@ -151,7 +151,6 @@ $base_size:16;
     
 
     .section_subscribe {
-        padding: 120px 0;
         .subscribe_text {
             width: 45%;
         }
@@ -174,12 +173,7 @@ $base_size:16;
 
             }
         }
-    }
-   
-    
-    .section_subscribe {
-        padding: 110px 0;
-    }           
+    }          
 }
 
 @media screen and (max-width:1020px){
@@ -207,7 +201,6 @@ $base_size:16;
     }
    
     .section_subscribe {
-        padding: 100px 0;
         .subscribe_text {
             width: 55%;
         }
@@ -992,9 +985,7 @@ $base_size:16;
             }
         }
     }
-    .section_subscribe.lazy-bg {
-        overflow: hidden;
-    }
+    
 
     .blog_section {
         .container {
