@@ -240,31 +240,46 @@ img {
 }
 .sidemenu li a {
   display: inline-block;
-  padding: 15px;
   text-decoration: none;
+  padding: 15px;
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
   width: 100%;
   color: #000;
   position: relative;
+}
+.sidemenu li a::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  background-color: #ff6033;
+  height: 2px;
+  top: 0px;
+  left: 0;
+  transition: all 0.4s ease;
 }
 .sidemenu li a:after {
   content: "";
   width: 0%;
   position: absolute;
   background-color: #ff6033;
-  height: 4px;
-  top: 38px;
-  left: 16%;
-  transform: translateX(-50%);
+  opacity: 0.5;
+  height: 100%;
+  bottom: 0px;
+  left: 0;
   transition: all 0.3s ease;
 }
 .sidemenu li a:hover {
   text-decoration: none;
+  /*&::before {
+      width: 100%;
+  }*/
 }
 .sidemenu li a:hover:after {
-  width: 35%;
+  width: 100%;
+  opacity: 0.1;
 }
 
 .open #page_overlay {
@@ -470,8 +485,10 @@ main {
   width: 50%;
 }
 .section_services .block_servises .block_servises_left {
-  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 79px;
+  display: flex;
+  justify-content: end;
 }
 .section_services .block_servises .block_servises_left .block_link {
   list-style: none;
@@ -503,12 +520,14 @@ main {
   justify-content: center;
   align-items: center;
   width: 25%;
+  min-width: 107.5px;
+  max-width: 107.5px;
   height: 100%;
   border-left: 1px solid #9d9d9d;
   cursor: pointer;
 }
-.section_services .block_servises .block_servises_left .block_link li .image_link img {
-  width: 70%;
+.section_services .block_servises .block_servises_left .block_link li .image_link svg {
+  width: 50%;
 }
 .section_services .block_servises .block_servises_left .block_link li:hover {
   transform: scale(1.05);
@@ -855,14 +874,24 @@ main {
   height: 50px;
   color: #fff;
   padding-left: 25px;
+  font-size: 1rem;
+}
+.form:hover:focus {
+  font-weight: 200;
+  background-color: #00b1b1;
+}
+.form:focus {
+  border-left: 4px solid #5585a2;
 }
 .form:hover {
   background-color: #00b1b1;
-  border-left: 4px solid #5585a2;
   font-weight: 600;
 }
 .form:hover::placeholder {
   font-weight: 600;
+}
+.form:hover:focus::placeholder {
+  font-weight: 400;
 }
 .form::placeholder {
   font-family: "Raleway", sans-serif;

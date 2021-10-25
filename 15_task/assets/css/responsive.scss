@@ -79,16 +79,23 @@ $base_size:16;
         .container {
             .block_servises {
                 .block_servises_left {
-                    padding-left: 50px;
-                    
+                    padding-top: 50px;
+                    .block_link {
+                        width: 90%;
+                        li {
+                            a {
+                                @include fz(20);
+                            }
+                        }
+                    }
+                   
                 }
                 .block_servises_right {
-                    justify-content: center;
-                    width: 80%;
+                    background-size: auto 90%;
                     .services_name {
                         
                         h2 {
-                            @include fz(70);
+                            @include fz(75);
                             
                         }
                     }
@@ -177,21 +184,33 @@ $base_size:16;
 }
 
 @media screen and (max-width:1020px){
+   
     .section_services {
         .container {
             .block_servises {
                 .block_servises_left {
-                    padding-left: 0px;
-                    padding-top: 0;
-                    width: 70%;
+                    padding-top: 50px;
+                    .block_link {
+                        width: 100%;
+                        height: 390px;
+                        li {
+                            a {
+                                @include fz(18);
+                            }
+                            .image_link {
+                                min-width: 82.5px;
+                                max-width: 82.5px;
+                            }
+                        }
+                    }
+                   
                 }
                 .block_servises_right {
-                    justify-content: center;
-                    background-size: 80%;
+                    background-size: auto 95%;
                     .services_name {
                         
                         h2 {
-                            @include fz(70);
+                            @include fz(66);
                             
                         }
                     }
@@ -259,7 +278,7 @@ $base_size:16;
             .text_about {
                 width: 85%;
                 h2 {
-                    @include fz(60);
+                    @include fz(65);
                 }
                 p {
                     line-height: 20px; 
@@ -269,43 +288,39 @@ $base_size:16;
     }
 
     .section_services {
-        padding: 2vh 0 5vh 0;
         .container {
             .block_servises {
-                flex-direction: column-reverse;
-                justify-content: space-between;
-                align-items: center;
                 .block_servises_left {
-                    padding-left: 0px;
-                    padding-top: 0px;
-                    width: 80%;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    padding-top: 50px;
+                    width: 55%;
                     .block_link {
-                        width: 90%;                       
+                        width: 100%;
+                        height: 390px;
+                        li {
+                            a {
+                                @include fz(16);
+                            }
+                            .image_link {
+                                min-width: 82.5px;
+                                max-width: 82.5px;
+                            }
+                        }
                     }
+                   
                 }
                 .block_servises_right {
-                    background-color: transparent;
-                    background-size: 0 0;            
-                    justify-content: center;
-                    width: 100%;
+                    background-size: auto 88%;
                     .services_name {
                         
-                    
                         h2 {
-                            @include fz(60);
-                            line-height: 170px;
+                            @include fz(55);
+                            
                         }
                     }
                 }
             }
         }
     }
-
-
 
     .blog_section {
         
@@ -318,12 +333,23 @@ $base_size:16;
                 .p_blog {
                     width: 80%;
                 }
-                .articles {
-                    
-                    
-                        .block_blog {
-                            margin-bottom: 15px;
+                .articles { 
+                    .block_blog {
+                        margin-bottom: 30px;
+                        width: 320px;
+                        height: 210px;
+                        .img_section_blog {
+                        width: 320px;
+                        height: 210px;
+                        
                         }
+                        &:hover .date_block_blog {
+                            left: 15px;
+                            top: 15px;
+                        }
+                        
+
+                    }
                 }
                 .btn_red {
                     
@@ -382,7 +408,42 @@ $base_size:16;
         }
     }
     
-    
+    .section_services {
+        .container {
+            .block_servises {
+                .block_servises_left {
+                    padding-top: 50px;
+                    width: 48%;
+                    padding-right: 0;
+                    
+                    .block_link {
+                        width: 90%;
+                        height: 390px;
+                        li {
+                            a {
+                                @include fz(16);
+                            }
+                            .image_link {
+                                min-width: 82.5px;
+                                max-width: 82.5px;
+                            }
+                        }
+                    }
+                   
+                }
+                .block_servises_right {
+                    background-size: auto 82%;
+                    .services_name {
+                        
+                        h2 {
+                            @include fz(52);
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .section_gallery {
         padding: 5vh 0;
@@ -472,11 +533,11 @@ $base_size:16;
                 }
                 .articles { 
                     .block_blog {
-                        margin-bottom: 15px;
-                        width: 270px;
+                        margin-bottom: 30px;
+                        width: 285px;
                         height: 210px;
                         .img_section_blog {
-                        width: 270px;
+                        width: 285px;
                         height: 210px;
                         
                         }
@@ -549,7 +610,7 @@ $base_size:16;
             .text_about {
                 width: 100%;                
                 h2 {
-                    @include fz(65);
+                    @include fz(44);
                     text-align: center;
                     margin-bottom: 15px;
                 }
@@ -562,37 +623,96 @@ $base_size:16;
     }
    
     .section_services {
-        padding: 2vh 0 5vh 0;
+        padding: 5vh 0;
         .container {
             .block_servises {
                 flex-direction: column-reverse;
-                justify-content: space-between;
                 align-items: center;
                 .block_servises_left {
-                    padding-left: 0px;
                     padding-top: 0px;
-                    width: 60%;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    width: 80%;
+                    padding-right: 0;
                     .block_link {
-                        width: 90%;                       
+                        width: 100%;
+                        height: 390px;
+                        li {
+                            a {
+                                @include fz(16);
+                            }
+                            .image_link {
+                                min-width: 82.5px;
+                                max-width: 82.5px;
+                            }
+                        }
                     }
+                   
                 }
                 .block_servises_right {
-                    background-size: 0%;
-                    justify-content: center;
                     width: 100%;
+                    height: 200px;
+                    background-size: auto 100%;
+                    background-position: 30px center;
+                    display: flex;
+                    justify-content: center;
+                    
                     .services_name {
                         
-                    
                         h2 {
-                            @include fz(54);
-                            line-height: 100px;
+                            @include fz(60);
                         }
                     }
                 }
+            }
+        }
+    }
+   
+    .section_gallery {
+        .container {
+            .gallery_text {
+                h2 {
+                    
+                }
+                p {
+                    
+                }
+            }
+            .gallery_pic {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                .big_small {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .pic_big {
+                        width: 100%;
+                        margin-bottom: 20px;                       
+                    }
+                    .two_small_pic {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;                         
+                        .pic {
+                            width: calc(50% - 10px); 
+                            height: 100%;
+                        }
+                    }
+                }
+                .two_middle_pic {
+                    display: flex;
+                    justify-content: space-between;
+                
+                    .pic {
+                        width: calc(50% - 10px);
+                    }
+                    
+                }
+            }
+            .btn_blue_gallery {
+                
             }
         }
     }
@@ -623,10 +743,10 @@ $base_size:16;
                 .articles { 
                     .block_blog {                        
                         margin-bottom: 25px;
-                        width: 370px;
+                        width: 450px;
                         height: 310px;
                         .img_section_blog {
-                            width: 370px;
+                            width: 450px;
                             height: 310px;
                         
                         }
@@ -712,50 +832,7 @@ $base_size:16;
             }
         }
     }
-    
-    .section_services {
-        padding: 2vh 0 5vh 0;
-        .container {
-            .block_servises {
-                flex-direction: column-reverse;
-                justify-content: space-between;
-                align-items: center;
-                .block_servises_left {
-                    padding-left: 0px;
-                    padding-top: 0px;
-                    width: 80%;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    .block_link {
-                        width: 90%;
-                        li {
-                            
-                            a {
-                                @include fz(18)
-                            }
-                        }                       
-                    }
-                }
-                .block_servises_right {
-                    background-size: 0%;
-                    justify-content: center;
-                    width: 100%;
-                    padding-top: 0px;
-                    .services_name {
-                        
-                    
-                        h2 {
-                            @include fz(44);
-                            line-height: 100px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
+   
     .section_gallery {
         .container {
             .gallery_text {
@@ -899,7 +976,12 @@ $base_size:16;
                .contact_block_left {
                     .contact_form {
                         .form {
-                            
+                            width: 450px;
+                            height: 50px;
+                        }
+                        .form_message {
+                            width: 450px;
+                            height: 250px;
                         }
                     }
                }
@@ -909,44 +991,43 @@ $base_size:16;
 }
 
 @media screen and (max-width:500px){
-
     .section_services {
-        padding: 2vh 0 5vh 0;
+        padding: 5vh 0;
         .container {
             .block_servises {
                 flex-direction: column-reverse;
-                justify-content: space-between;
                 align-items: center;
                 .block_servises_left {
-                    padding-left: 0px;
                     padding-top: 0px;
                     width: 80%;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    padding-right: 0;
                     .block_link {
-                        width: 90%;
+                        width: 100%;
+                        height: 290px;
                         li {
-                            
                             a {
-                                @include fz(18)
+                                @include fz(16);
                             }
-                        }                       
+                            .image_link {
+                                min-width: 57.5px;
+                                max-width: 57.5px;
+                            }
+                        }
                     }
+                   
                 }
                 .block_servises_right {
-                    background-size: 0;
-                    justify-content: center;
                     width: 100%;
-                    padding-top: 0px;
+                    height: 150px;
+                    background-size: auto 100%;
+                    background-position: 10px center;
+                    display: flex;
+                    justify-content: center;
+                    
                     .services_name {
                         
-                    
                         h2 {
-                            @include fz(44);
-                            line-height: 100px;
-                            padding-left: 0px;
+                            @include fz(42);
                         }
                     }
                 }
@@ -985,7 +1066,6 @@ $base_size:16;
             }
         }
     }
-    
 
     .blog_section {
         .container {
@@ -1000,11 +1080,11 @@ $base_size:16;
                 .articles { 
                     .block_blog {
                         margin-bottom: 15px;
-                        width: 270px;
-                        height: 210px;
+                        width: 400px;
+                        height: 230px;
                         .img_section_blog {
-                        width: 270px;
-                        height: 210px;
+                        width: 400px;
+                        height: 230px;
                         
                         }
                         &:hover .date_block_blog {
@@ -1018,6 +1098,55 @@ $base_size:16;
                 .btn_red {
                 }
             }
+        }
+    }
+    
+    .contact_section {
+        .container {
+            .name_contact_section {
+                h2 {
+                    @include fz(42);
+                }
+                p {
+                    width: 100%;
+                    line-height: 20px;
+                }
+            }
+           .blocks_contact {
+               flex-direction: column-reverse;
+               align-items: center;
+               .contact_block_right {
+                   width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: space-between;
+                   .our_contacts {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h5 {
+                        @include fz(16);
+                    }
+                    a {
+                        @include fz(18);
+                    }
+                   }
+
+               }
+               .contact_block_left {
+                    .contact_form {
+                        .form {
+                            width: 330px;
+                            height: 50px;
+                        }
+                        .form_message {
+                            width: 330px;
+                            height: 250px;
+                        }
+                    }
+               }
+           } 
         }
     }
 
@@ -1045,3 +1174,38 @@ $base_size:16;
     }
 }
 
+@media screen and (max-width:450px) {
+    .blog_section {
+        .container {
+            .flex_blog {
+                .h2_blog {
+                    @include fz(42);
+                }
+                .p_blog {
+                    width: 100%;
+                    line-height: 20px;
+                }
+                .articles { 
+                    .block_blog {
+                        margin-bottom: 15px;
+                        width: 320px;
+                        height: 210px;
+                        .img_section_blog {
+                        width: 320px;
+                        height: 210px;
+                        
+                        }
+                        &:hover .date_block_blog {
+                            left: 15px;
+                            top: 15px;
+                        }
+                        
+
+                    }
+                }
+                .btn_red {
+                }
+            }
+        }
+    }
+}

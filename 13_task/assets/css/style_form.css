@@ -72,7 +72,6 @@ body {
   border-bottom: 2px solid transparent;
 }
 .container .block .menu__list .list__item:hover {
-  transform: scale(1.05);
   border-bottom: 2px solid #e66a64;
   opacity: 1;
 }
@@ -128,6 +127,9 @@ body {
   background-color: none;
   background: none;
   border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
 }
 .container .block .form__text {
   color: #fff;
@@ -147,7 +149,6 @@ body {
   cursor: pointer;
 }
 .container .block .button__btn:hover {
-  transform: scale(1.02);
   background-color: #1f9980;
 }
 .container .block .bottom {
@@ -169,7 +170,6 @@ body {
   border-bottom: 1px solid #756faf;
 }
 .container .block .bottom__element .list__item:hover {
-  transform: scale(1.05);
   opacity: 1;
-  border-bottom: 2px solid #7e7aa5;
+  border-bottom: 1px solid #7e7aa5;
 }

@@ -74,7 +74,6 @@ body {
                         border-bottom: 2px solid transparent;                       
 
                         &:hover {
-                            transform: scale(1.05);
                             border-bottom: 2px solid #e66a64;
                             opacity: 1;
                         }
@@ -130,7 +129,6 @@ body {
 
         .form {
             width: 100%;
-
             &__item {
                 input {
                     width: 100%;
@@ -138,6 +136,9 @@ body {
                     background-color: none;
                     background: none;
                     border: 1px solid #fff;
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 0 10px;
                 }
             }
 
@@ -161,7 +162,6 @@ body {
                 cursor: pointer;
 
                 &:hover {
-                    transform: scale(1.02);
                     background-color: darken(#23ae92, 5);
                 }
             }
@@ -186,9 +186,8 @@ body {
                         border-bottom: 1px solid #756faf; 
                     
                         &:hover {
-                            transform: scale(1.05);
                             opacity: 1;
-                            border-bottom: 2px solid #7e7aa5;
+                            border-bottom: 1px solid #7e7aa5;
                         }
                     }
                 }

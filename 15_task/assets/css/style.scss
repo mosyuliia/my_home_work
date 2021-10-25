@@ -268,30 +268,49 @@ img {
         width: 100%;
         a {
             display: inline-block;
-            padding: 15px;
             text-decoration: none;
+            padding: 15px;
             @include fz(20);
             font-weight: 700;
             text-transform: uppercase;
+            letter-spacing: 1.5px;
             width: 100%;
-            color: #000;
+            color: $color_black;
             position: relative;
+            &::before {
+                content: '';
+                width: 0%;
+                position: absolute;
+                background-color: $color_orange;
+                height: 2px;
+                top: 0px;
+                left: 0;
+                //transform: translateX(-50%);
+                transition: all .4s ease;
+            }
             &:after {
                 content: '';
                 width: 0%;
                 position: absolute;
                 background-color: $color_orange;
-                height: 4px;
-                top: 38px;
-                left: 16%;
-                transform: translateX(-50%);
+                opacity: .5;
+                height: 100%;
+                bottom: 0px;
+                left: 0;
+                //transform: translateX(-50%);
                 transition: all .3s ease;
             }
             &:hover {
                 text-decoration: none;
+                //background-color: rgb(219, 219, 219);
+
+                /*&::before {
+                    width: 100%;
+                }*/
         
                 &:after {
-                    width: 35%;
+                    width: 100%;
+                    opacity: .1;
                 }
             }
         }
@@ -494,8 +513,10 @@ main {
             width: 50%;
         }
         .block_servises_left {
-            padding-left: 100px;
+            padding-right: 100px;
             padding-top:79px;
+            display: flex;
+            justify-content: end;
             .block_link {
             list-style: none;
             display: flex;
@@ -526,11 +547,13 @@ main {
                         justify-content: center;
                         align-items: center;
                         width: 25%;
+                        min-width: 107.5px;
+                        max-width: 107.5px;
                         height: 100%;
                         border-left: 1px solid #9d9d9d;
                         cursor: pointer;
-                        img {
-                            width: 70%;
+                        svg {
+                            width: 50%;
                         }
                     }
                 }
@@ -829,7 +852,7 @@ main {
 }
 
 .contact_form {
-    margin-bottom: 15px;    
+    margin-bottom: 15px; 
 }
 
 .form {
@@ -839,12 +862,23 @@ main {
     height: 50px;
     color: $color_white;
     padding-left: 25px;
+    @include fz(16);
+    &:hover:focus {
+        font-weight: 200;
+        background-color: $color_turquoise;
+    }
+    &:focus {
+        border-left: 4px solid $color_darkblue;
+    }
     &:hover {
         background-color: $color_turquoise;
-        border-left: 4px solid $color_darkblue;
+        //border-left: 4px solid $color_darkblue;
         font-weight: 600;
         &::placeholder {
             font-weight: 600;
+        }
+        &:focus::placeholder {
+            font-weight: 400;
         }
     }
     &::placeholder {
