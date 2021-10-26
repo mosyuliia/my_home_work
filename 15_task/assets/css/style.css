@@ -338,8 +338,10 @@ header.scrolled {
 #header_menu a:after {
   content: "";
   width: 0;
+  text-decoration: none;
   position: absolute;
   background-color: #ff6033;
+  background: transparent;
   height: 4px;
   top: 0;
   left: 50%;
