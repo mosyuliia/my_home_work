@@ -376,7 +376,12 @@
             });
         });
     </script>
-
+    <script>
+        $(".sidemenu a").on('click', () => {
+            $("#mobile_menu_wrap .hamburger").removeClass("is-active");
+            $("body").removeClass("open");
+        });
+    </script>
 
 </body>
 
