@@ -240,8 +240,8 @@ img {
 }
 .sidemenu li a {
   display: inline-block;
-  text-decoration: none;
   padding: 15px;
+  text-decoration: none;
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -249,23 +249,14 @@ img {
   width: 100%;
   color: #000;
   position: relative;
-}
-.sidemenu li a::before {
-  content: "";
-  width: 0%;
-  position: absolute;
-  background-color: #ff6033;
-  height: 2px;
-  top: 0px;
-  left: 0;
-  transition: all 0.4s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .sidemenu li a:after {
   content: "";
   width: 0%;
   position: absolute;
   background-color: #ff6033;
-  opacity: 0.5;
+  opacity: 0.2;
   height: 100%;
   bottom: 0px;
   left: 0;
@@ -279,7 +270,10 @@ img {
 }
 .sidemenu li a:hover:after {
   width: 100%;
-  opacity: 0.1;
+}
+.sidemenu li a:active {
+  background-color: #ff6033;
+  opacity: 0.5;
 }
 
 .open #page_overlay {
@@ -338,10 +332,8 @@ header.scrolled {
 #header_menu a:after {
   content: "";
   width: 0;
-  text-decoration: none;
   position: absolute;
   background-color: #ff6033;
-  background: transparent;
   height: 4px;
   top: 0;
   left: 50%;

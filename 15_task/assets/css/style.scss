@@ -264,12 +264,12 @@ img {
 
 .sidemenu {
     li {
-        //border-bottom: 1px solid #666;
         width: 100%;
+
         a {
             display: inline-block;
-            text-decoration: none;
             padding: 15px;
+            text-decoration: none;
             @include fz(20);
             font-weight: 700;
             text-transform: uppercase;
@@ -277,29 +277,21 @@ img {
             width: 100%;
             color: $color_black;
             position: relative;
-            &::before {
-                content: '';
-                width: 0%;
-                position: absolute;
-                background-color: $color_orange;
-                height: 2px;
-                top: 0px;
-                left: 0;
-                //transform: translateX(-50%);
-                transition: all .4s ease;
-            }
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
             &:after {
                 content: '';
                 width: 0%;
                 position: absolute;
                 background-color: $color_orange;
-                opacity: .5;
+                opacity: .2;
                 height: 100%;
                 bottom: 0px;
                 left: 0;
                 //transform: translateX(-50%);
                 transition: all .3s ease;
             }
+
             &:hover {
                 text-decoration: none;
                 //background-color: rgb(219, 219, 219);
@@ -307,11 +299,16 @@ img {
                 /*&::before {
                     width: 100%;
                 }*/
-        
+
                 &:after {
                     width: 100%;
-                    opacity: .1;
+                    //opacity: .1;
                 }
+            }
+            &:active {
+                background-color: $color_orange;
+                opacity: .5;
+
             }
         }
     }
@@ -382,10 +379,8 @@ header {
     &:after {
         content: '';
         width: 0;
-        text-decoration: none;
         position: absolute;
         background-color: $color_orange;
-        background: transparent;
         height: 4px;
         top: 0;
         left: 50%;
