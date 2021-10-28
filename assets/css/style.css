@@ -91,23 +91,27 @@ html, body {
 }
 
 .container {
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto; 
 }
 
-.clear {
-    clear: both;
-    height: 0;
-    display: block;
-    line-height: 0;
+.flex_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.works {
+    width: calc(25%-30px);
 }
 
 h1 {
     font-size: 36px;
     color: #fff;
     margin-top: 40px;
-    margin-left: 100px;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
+    text-align: center;   
 }
 
 span {
@@ -125,17 +129,6 @@ ul {
     font-size: 26px;
 }
 
-.ul_left {
-    float: left;
-    margin-left: 50px;
-   
-}
-
-.ul_right {
-    float: left;
-    margin-left: 500px;
-}
-
 .number_work {
     font-size: 18px;
 }
@@ -149,7 +142,6 @@ a {
 
 body {
     background-position: center;
-    /*background-image: url(../images/forest-wallpapers-2560x1600-00013.jpg);*/
     background: linear-gradient(90deg, #3a183f, #af0a4f);
 }
 
