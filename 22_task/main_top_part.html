@@ -15,8 +15,9 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="main_top_part">
+
+    <div class="main_top_part">
+        <div class="container">
             <div class="content_main_top_part">
                 <div class="img_main_top_part"><img src="assets/images/circle_without_shadow.png" alt="circle"></div>
                 <div class="text_main_top_part">
@@ -36,6 +37,26 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".hamburger, #page_overlay").on('click', function () {
+                $("#mobile_menu_wrap .hamburger").toggleClass("is-active");
+                $("body").toggleClass("open");
+            });
+        });
+    </script>
+
+
+    <script>
+        $(".sidemenu a").on('click', () => {
+            $("#mobile_menu_wrap .hamburger").removeClass("is-active");
+            $("body").removeClass("open");
+        });
+    </script>
+
+
 
 </body>
 
