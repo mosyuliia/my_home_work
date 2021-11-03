@@ -14,6 +14,16 @@
     <link rel="mask-icon" href="assets/favicon//safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta property="og:locale" content="en_GB"
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cahee - food delivery">
+    <meta property="og:description" content="We sell and deliver fresh products">
+    <meta property="og:url" content="https://mosyuliia.github.io/my_home_work/15_task/index.html">
+    <meta property="og:site_name" content="Cahee">
+    <meta property="og:image" content="https://mosyuliia.github.io/my_home_work/assets/images/cahee_og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="640">
+
     <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
     <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -329,18 +339,18 @@
                         <button class="btn_blue" type="button">submit</button>
                     </div>
 
-                    <div class="contact_block_right">
-                        <div class="our_contacts">
+                    <div class="contact_block_right" itemscope itemtype="https://schema.org/Organization">
+                        <div class="our_contacts" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <h5>address</h5>
-                            <a href="#">123 City name, Street, City, Country</a>
+                            <a href="#"><span itemprop="streetAddress">City name, Street</span>, <span itemprop="addressLocality">City, Country</span></a>
                         </div>
                         <div class="our_contacts">
                             <h5>email</h5>
-                            <a href="mailto:#">cahee@domain.com</a>
+                            <a href="mailto:#" itemprop="email">cahee@domain.com</a>
                         </div>
                         <div class="our_contacts">
                             <h5>phone</h5>
-                            <a href="tel:#">+012 345 6789</a>
+                            <a href="tel:#" itemprop="telephone">+012 345 6789</a>
                         </div>
                     </div>
 
