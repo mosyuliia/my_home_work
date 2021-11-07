@@ -1,3 +1,5 @@
+@import "hamburger";
+
 @font-face {
     font-family: 'Aleo';
     src: url('../fonts/aleo-bold-webfont.woff2');
@@ -92,7 +94,6 @@
          url('../fonts/josefin-sans-v20-latin-ext_latin-700.svg#JosefinSans') format('svg'); /* Legacy iOS */
   }
   
-@import "hamburger";
 
 @mixin fz($size_px) {
     font-size: ($size_px/$base_size)+rem;
