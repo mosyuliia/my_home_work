@@ -188,6 +188,12 @@ img {
   width: 100%;
 }
 
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 /*mobile menu*/
 #page_overlay {
   display: none;
@@ -281,12 +287,6 @@ img {
 }
 .open #mobile_menu_wrap {
   left: 0;
-}
-
-.container {
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
 }
 
 header {
