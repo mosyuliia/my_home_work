@@ -15,11 +15,14 @@
     letter-spacing: 1.2px;
     border: none;
     cursor: pointer;
+    background-image: -o-linear-gradient(45deg, $blue_dark 50%, transparent 50%);
     background-image: linear-gradient(45deg, $blue_dark 50%, transparent 50%);
     background-position: 55%;
     background-size: 400%;
     &:hover {
         background-position: 0;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
         transition: all .5s ease;
     }
 }
@@ -63,7 +66,9 @@ $blue_dark: #496bfe;
         .actions {
             .container {
                 .flex_actions {
-                    align-items: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
 
                     .flex_arc {
                         
@@ -77,7 +82,9 @@ $blue_dark: #496bfe;
                         }
                     }
                     .content_actions {
-                        align-self: stretch;
+                        -ms-flex-item-align: stretch;
+                            -ms-grid-row-align: stretch;
+                            align-self: stretch;
                         .icon_actions {
                             
                             .icon {
@@ -151,15 +158,22 @@ $blue_dark: #496bfe;
                     
                 }
                 .conten_reviews {
-                    flex-direction: column;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
                     .img_reviews {
-                        align-self: end;
+                        -ms-flex-item-align: end;
+                            -ms-grid-row-align: end;
+                            align-self: end;
                         padding: 20px 20px;
                         width: 80%;
                     }
                     .text_conten_reviews {
                         width: 75%;
-                        align-self: start;
+                        -ms-flex-item-align: start;
+                            -ms-grid-row-align: start;
+                            align-self: start;
                         padding: 20px 20px;
                         span {
 
@@ -201,7 +215,10 @@ $blue_dark: #496bfe;
         .content_choose {
             .container {
                 padding-top: 0;
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
                 padding-top: 9vh;
                 margin-bottom: 100px;
                 .left_choose {
@@ -215,7 +232,9 @@ $blue_dark: #496bfe;
                         margin-bottom: 20px;
                     }
                     .btn_choose {
-                        align-self: end;
+                        -ms-flex-item-align: end;
+                            -ms-grid-row-align: end;
+                            align-self: end;
                     }
                 }
                 .right_choose {
@@ -233,7 +252,9 @@ $blue_dark: #496bfe;
         .actions {
             .container {
                 .flex_actions {
-                    align-items: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
 
                     .flex_arc {
                         
@@ -247,8 +268,12 @@ $blue_dark: #496bfe;
                         }
                     }
                     .content_actions {
-                        align-self: stretch;
-                        justify-content: space-between;
+                        -ms-flex-item-align: stretch;
+                            -ms-grid-row-align: stretch;
+                            align-self: stretch;
+                        -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                                justify-content: space-between;
                         .icon_actions {
                             
                             .icon {
@@ -290,7 +315,9 @@ $blue_dark: #496bfe;
             height: 300px;
             .container {
                 .flex_actions {
-                    align-items: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     .flex_arc {
                         
                         .arc {
@@ -303,8 +330,12 @@ $blue_dark: #496bfe;
                         }
                     }
                     .content_actions {
-                        align-self: stretch;
-                        justify-content: space-between;
+                        -ms-flex-item-align: stretch;
+                            -ms-grid-row-align: stretch;
+                            align-self: stretch;
+                        -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                                justify-content: space-between;
                         .icon_actions {
                             width: 100%;
                             .icon {
@@ -386,7 +417,10 @@ $blue_dark: #496bfe;
                 .search_top_part {
                     .form_search {
                         background: transparent;
-                        flex-direction: column;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
                         .text_search {
                             height: 50px;
                             width: 500px;
@@ -421,9 +455,16 @@ $blue_dark: #496bfe;
             height: 320px;
             .container {                
                 .flex_actions {
-                    align-items: center;
-                    flex-direction: row-reverse;
-                    justify-content: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: reverse;
+                        -ms-flex-direction: row-reverse;
+                            flex-direction: row-reverse;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                     //position: relative;
                     .flex_arc {
                         //position: relative;
@@ -450,19 +491,37 @@ $blue_dark: #496bfe;
                         }
                     }
                     .content_actions {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
                         
                         .icon_actions {
                             width: 100%;
                             margin-top: 20px;
                             margin-bottom: 20px;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                                -ms-flex-direction: row;
+                                    flex-direction: row;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                            -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
                             &:first-child {
                                 padding-right: 150px;
                             }
@@ -499,7 +558,9 @@ $blue_dark: #496bfe;
         .places_top {
             padding: 13vh 0 7vh 0;
             .container {
-                justify-content: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
                 .content_places_top {
                     width: 100%;
                     h4 {
@@ -521,7 +582,9 @@ $blue_dark: #496bfe;
         .places_bottom {
             padding: 13vh 0 7vh 0;
             .container {
-                justify-content: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
                 .content_places_bottom {
                     width: 100%;
                     h4 {
@@ -545,14 +608,19 @@ $blue_dark: #496bfe;
     .choose {
         .content_choose {
             .container {                
-                flex-direction: column;
+                -webkit-box-orient: vertical;                
+                -webkit-box-direction: normal;                
+                    -ms-flex-direction: column;                
+                        flex-direction: column;
                 padding-top: 4vh;
                 margin-bottom: 70px;
                 .left_choose {
                     width: 100%;
                     padding-top: 0vh;
                     margin-bottom: 30px;
-                    align-items: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     h2 {
                         @include fz(35); 
                     }
@@ -560,7 +628,9 @@ $blue_dark: #496bfe;
                         margin-bottom: 20px;
                     }
                     .btn_choose {
-                        align-self: end;
+                        -ms-flex-item-align: end;
+                            -ms-grid-row-align: end;
+                            align-self: end;
                         width: 165px;
                         height: 50px;
                     }
@@ -580,7 +650,9 @@ $blue_dark: #496bfe;
         .actions {
             .container {
                 .flex_actions {
-                    align-items: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
 
                     .flex_arc {
                         
@@ -594,8 +666,12 @@ $blue_dark: #496bfe;
                         }
                     }
                     .content_actions {
-                        align-self: stretch;
-                        justify-content: space-between;
+                        -ms-flex-item-align: stretch;
+                            -ms-grid-row-align: stretch;
+                            align-self: stretch;
+                        -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                                justify-content: space-between;
                         .icon_actions {
                             
                             .icon {
@@ -624,15 +700,22 @@ $blue_dark: #496bfe;
                     @include fz(30);
                 }
                 .conten_reviews {
-                    flex-direction: column;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
                     .img_reviews {
-                        align-self: center;
+                        -ms-flex-item-align: center;
+                            -ms-grid-row-align: center;
+                            align-self: center;
                         padding: 20px 20px;
                         width: 100%;
                     }
                     .text_conten_reviews {
                         width: 100%;
-                        align-self: center;
+                        -ms-flex-item-align: center;
+                            -ms-grid-row-align: center;
+                            align-self: center;
                         padding: 20px 20px;
                         span {
 
@@ -703,14 +786,19 @@ $blue_dark: #496bfe;
         .content_choose {
             .container {
                 padding-top: 0;
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
                 padding-top: 9vh;
                 margin-bottom: 100px;
                 .left_choose {
                     width: 100%;
                     padding-top: 0vh;
                     margin-bottom: 50px;
-                    align-items: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     h2 {
                         @include fz(35); 
                     }
@@ -719,7 +807,9 @@ $blue_dark: #496bfe;
                         text-align: justify;
                     }
                     .btn_choose {
-                        align-self: center;
+                        -ms-flex-item-align: center;
+                            -ms-grid-row-align: center;
+                            align-self: center;
                         width: 165px;
                         height: 50px;
                     }
@@ -740,9 +830,16 @@ $blue_dark: #496bfe;
             height: 260px;
             .container {                
                 .flex_actions {                    
-                    align-items: center;
-                    flex-direction: row-reverse;
-                    justify-content: center;
+                    -webkit-box-align: center;                    
+                        -ms-flex-align: center;                    
+                            align-items: center;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: reverse;
+                        -ms-flex-direction: row-reverse;
+                            flex-direction: row-reverse;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                     position: relative;
                     .flex_arc {
                         display: none;
@@ -760,19 +857,37 @@ $blue_dark: #496bfe;
                         }
                     }
                     .content_actions {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
                         
                         .icon_actions {
                             width: 100%;
                             margin-top: 10px;
                             margin-bottom: 10px;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                                -ms-flex-direction: row;
+                                    flex-direction: row;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                            -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
                             &:first-child {
                                 padding-right: 50px;
                             }
@@ -843,4 +958,3 @@ $blue_dark: #496bfe;
         }
     }
 }
-
