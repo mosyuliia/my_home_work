@@ -58,21 +58,6 @@ function specialSymbol() {
 /*Запросить у пользователя трехзначное число и проверить, есть ли в нем одинаковые цифры.
 первій вариант с урока*/
 
-/*
-function isMatched(num){
-    num = parseInt(num);
-    let s, d, e;
-    s = parseInt(num/100);
-    d = parseInt((num%100)/10);
-    e = num%10;
-    if(s==d || s==e || d==e){
-        console.log('Match');
-    }
-    else{
-        console.log('Not match');
-    }
-}*/
-
 
 function isMatched() {
   var num = prompt("Введите число");
