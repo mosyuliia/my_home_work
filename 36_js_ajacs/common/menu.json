@@ -1,0 +1,22 @@
+[
+    {
+    "name":"Main",
+    "file":"main"
+    },
+    {
+    "name":"Authors",
+    "file":"users"
+        },
+    {
+        "name":"Blog",
+        "file":"posts"
+    },
+    {
+    "name":"Pricing",
+    "file":"pricing"  
+    },
+    {
+    "name":"Contact Us",
+    "file":"contacts"  
+    }
+]

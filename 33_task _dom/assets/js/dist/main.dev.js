@@ -1,150 +1,81 @@
 "use strict";
 
-/*function cam(){
-    let number = parseInt(document.getElementById("ser").value);
-    let resualt = number*number;
-    document.getElementById("abo")
-    
+var div = document.createElement('div');
+var h1 = document.createElement('h1');
+h1.innerText = 'Hello! I am tag from JS';
+
+function setStyle(el, styles) {
+  for (var prop in styles) {
+    el.style[prop] = styles[prop];
+  }
 }
 
+setStyle(h1, {
+  fontSize: '50px',
+  color: 'red',
+  position: 'fixed',
+  left: '200px',
+  top: '100px',
+  backgroundColor: 'yellow'
+});
+setStyle(div, {
+  padding: '50px',
+  backgroundColor: 'gray',
+  width: '400px',
+  height: '200px'
+});
+/*Саша убрал эту часть кода в процессе*/
 
-function calc(){
-    let number = parseInt(prompt("Введите первое число"));
-    let number2 = parseInt(prompt("Введите второе число"));
-    let action = prompt("Введите действие: + - * /");
-    let result;
-    if(action === "+"){
-        result = number + number2;        
-    }
-    if(action === "-"){
-        result = number - number2;        
-    }
-    if(action === "*"){
-        result = number * number2;        
-    }
-    if(action === "/"){
-        result = number / number2;        
-    }
-    alert(result);
+/*h1.setAttribute('style',`
+color:red;
+background-color:yellow`);
+
+h1.style.fontSize = '60px';
+console.log(h1.style);
+
+let h1_css = {
+    fontSize:'50px',
+    color:'red',
+    position:'fixed',
+    left:'200px',
+    top:'100px'
+};
+
+for(let prop in h1_css){
+    h1.style[prop] = h1_css[prop];
 }*/
 
-/*№1 Запросить у пользователя его возраст и определить, кем он является: ребенком (0–12), подростком (12–18),
-взрослым (18_60) или пенсионером (60– ...).*/
-function yourAge() {
-  var age = prompt("Введите ваш возраст");
-  var ageChild = "Вы ребенок";
-  var ageTeenager = "Вы подросток";
-  var ageAdult = "Вы взрослый";
-  var ageRetiree = "Вы пенсионер";
-  var result;
+/*Саша изменил эту часть в 21:50*/
 
-  if (age >= 0 && age < 12) {
-    result = ageChild;
-  } else if (age >= 12 && age < 18) {
-    result = ageTeenager;
-  } else if (age >= 18 && age < 60) {
-    result = ageAdult;
-  } else if (age >= 60) {
-    result = ageRetiree;
-  }
+/*h1.onclick = function(){
+    chTitle('Other text');
+}*/
 
-  alert(result);
-}
-/*2)Пользователь ввел число, а на экран вывелись все числа от введенного до 0.*/
+/*сделать переключение при клике туда и обратно*/
 
-
-var number = parseInt(prompt('Введите число'));
-
-while (number > 0) {
-  console.log(number);
-  number--;
-}
-
-function isResult() {
-  var number = parseInt(prompt('Введите число'));
-
-  while (number > 0) {
-    console.log(number);
-    number--;
-  }
-}
-/*3)Запросить число и степень. Возвести число в указанную степень и вывести результат.*/
-
-
-function myPow() {
-  var num = parseInt(prompt('Enter number'));
-  var pow = parseInt(prompt('Enter exponent'));
-
-  while (pow > 0) {
-    pow--;
-    r = num * r;
-  }
-
-  console.log(r);
-}
-/*4)Запросить 2 числа и найти все общие делители.*/
-
-
-function divider() {
-  var num_1 = parseInt(prompt('Введите первое число'));
-  var num_2 = parseInt(prompt('Введите второе число'));
-  var _final = '';
-  var limite = num_1 > num_2 ? num_1 : num_2;
-  var divader = 1;
-
-  while (divader <= limite) {
-    if (num_1 % divader == 0 && num_2 % divader == 0) {
-      _final += divader + " ";
-    }
-
-    divader++;
-  }
-
-  console.log(_final);
-}
-/*5)Посчитать факториал введенного пользователем числа.*/
-
-
-function factorial() {
-  var num = parseInt(prompt("Enter number"));
-
-  if (num < 10) {
-    var res = 1,
-        i = 1;
-
-    while (i <= num) {
-      res = res * i;
-      i++;
-    }
-
-    console.log(res);
+h1.onclick = function () {
+  if (flag) {
+    chTitle('Other text');
   } else {
-    console.warn("too big number");
-  }
-}
-/*1)Вывести все числа от 1 до 100, которые кратные указанному пользователем числу.*/
-
-
-function multiplicity() {
-  var number = parseInt(prompt("Enter number"));
-  var result = '';
-
-  for (var i = 1; i <= 100; i++) {
-    if (i % number == 0) {
-      result += i + ' ';
-    }
+    chTitle('Hello! I am tag from JS');
   }
 
-  console.log(result);
-}
-/*2)Вывести каждый 4-й элемент из указанного пользователем диапазона. 
-Пользователь указывает минимальное и максимальное значения диапазона.*/
+  flag = !flag;
+};
 
+var p = document.createElement('p');
+p.innerText = 'Lorem ipsum dolor';
+div.appendChild(h1);
+div.appendChild(p);
+div.classList.add('foo');
+/*добавить класс*/
 
-function range() {
-  var from = parseInt(prompt("Enter from"));
-  var to = parseInt(prompt("Enter to"));
-  var result = '';
+console.log(document.getElementsByClassName("foo"));
+/*выводим в консоль. чтобы посм класс добавился или нет*/
 
-  for (var i = from; i <= to; i = i + 4) {}
+document.body.appendChild(div);
+/*добавляем в боди*/
+
+function chTitle(t) {
+  h1.innerText = t;
 }

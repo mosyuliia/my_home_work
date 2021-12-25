@@ -24,6 +24,29 @@ function getNumber(){
     }
 }
 
+//пояснение от Саши про факториал
+
+/*function calcFactorial(){
+    const n = document.getElement...;
+    const factorial_result = 0;
+    if(n!=""){
+        if(n<=10){
+            factorial_result = factorial(n);
+            alert(`Факториал числа ${n} равен ${factorial_result}`);
+        }else{
+            //введите число меньше и равное 10
+        }
+    }else{
+        //введите число
+    }
+}
+
+function factorial(f){
+    let rez = 0;
+    //TODO: расчет факториала в переменную rez
+    return rez;
+}*/
+
 /*Напиши функцію, яка обчислює факторіал переданого їй числа.*/
 
 function getFactorial(){
